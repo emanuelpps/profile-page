@@ -1,13 +1,20 @@
-import React from "react";
+"use client";
+import { useState, useEffect } from "react";
 import NavBarLogo from "./components/NavBarLogo";
 import NavBarMenu from "./components/NavBarMenu";
-import "./styles/NavBar.css"
+import data from "@/app/api/user/userData.json";
+import "./styles/NavBar.css";
 
-function NavBar({user}) {
+function NavBar() {
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    setUser(data);
+  }, []);
   return (
     <div id="NavBar" className="headerNavBar">
       <NavBarLogo />
-      <NavBarMenu user={user}/>
+      <NavBarMenu user={user} />
     </div>
   );
 }

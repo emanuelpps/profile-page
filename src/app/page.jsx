@@ -1,24 +1,11 @@
-"use client";
-import NavBar from "./components/NavBar/NavBar";
-import React, { useState, useEffect } from "react";
-import data from "../app/api/user/userData.json";
-export default function Home({ children }) {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    setUser(data);
-  }, []);
+import companyLogo from "@/../public/assets/icons/companyLogo.png";
+import Image from "next/image";
+export default function Home() {
   return (
-    <>
-      <header>
-        <NavBar user={user} />
-      </header>
-      <main>
-        {React.Children.map(children, (child) =>
-          React.cloneElement(child, { user })
-        )}
-      </main>
-      <footer>FOOTER</footer>
-    </>
+    <main>
+      <div>
+        <Image src={companyLogo} className="logoCompanyImage" />
+      </div>
+    </main>
   );
 }

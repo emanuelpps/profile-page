@@ -3,14 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #e2e2e2;
-  height: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 40px;
   padding: 20px;
 }
 
 .logoImage {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 
 .navbarMenu {
@@ -19,16 +23,20 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  border-color: black;
-  border: solid;
-  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px 10px 5px 10px;
   border-radius: 15px;
 }
 
 .navbarMenu:hover {
-  background-color: blanchedalmond;
+  background-color: rgba(71, 62, 62, 0.137);
 }
 
 .avatarImage {
-  border-radius: 10px;
+  border-radius: 50%;
 }
