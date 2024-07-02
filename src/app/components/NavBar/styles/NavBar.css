@@ -37,6 +37,11 @@
   background-color: rgba(71, 62, 62, 0.137);
 }
 
+.navbarMenu span{
+  color: black;
+  
+}
+
 .avatarImage {
   border-radius: 50%;
 }
