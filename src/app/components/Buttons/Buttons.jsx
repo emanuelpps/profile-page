@@ -2,6 +2,7 @@ import "./Buttons.css"
 
 const ButtonVariants = {
   primary: "buttonStyle",
+  secondary: "buttonStyleSecondary",
 };
 
 const Buttons = ({ variant = "primary", label, onClick, style }) => (

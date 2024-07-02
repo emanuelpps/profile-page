@@ -6,10 +6,10 @@ function ProfileAbout({ user }) {
     <div id="profile-about">
       <div id="profile-about-container">
         <div id="details-title" className="detailsTitle">
-          <h2>Detalles</h2>
+          <h2 className="weight-titles-200">Detalles</h2>
         </div>
-        <div id="profile-about-image" className="profileImage">
-          <Image src={user?.profile_image} width={300} height={300} />
+        <div id="profile-about-image" >
+          <Image src={user?.profile_image} width={300} height={300}  className="profileImage"/>
         </div>
         <div id="profile-about-content">
           <div id="profile-about-content-text">
@@ -33,7 +33,7 @@ function ProfileAbout({ user }) {
             </div>
           </div>
           <div id="profile-about-interests-tags" className="flex-row">
-            <div id="interests-title"><h2>Intereses</h2></div>
+            <div id="interests-title"><h4>Intereses</h4></div>
             {user?.interests?.map((tag) => (
               <span key={tag} className="tag">
                 {tag}

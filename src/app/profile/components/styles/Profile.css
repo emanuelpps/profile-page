@@ -3,16 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2%;
-  width: 100vw;
+  width: 100%;
   overflow-y: hidden;
   height: auto;
+  margin-bottom: 100px;
 }
+
 
 #profile-header {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
 }
 
 #profile-header-buttons {
@@ -20,34 +21,37 @@
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  margin-left: 20px;
 }
 
 .profileTitle {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.profileTitle h1 {
-  margin-left: 20%;
-}
 
 #profile-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 50px;
-  width: 80%;
+  width: 100%;
 }
 
-
+#profile-about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .profileImage {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 350px;
+  border-radius: 15px;
+  width: fit-content;
 }
 
 .aboutText {
@@ -71,9 +75,10 @@
 #profile-about-interests-tags {
   margin-top: 30px;
   flex-wrap: wrap;
+  display: flex;
   justify-content: center;
-  width: 95%;
-  gap: 10px
+  align-items: center;
+  gap: 5px;
 }
 
 .tag {
@@ -87,5 +92,52 @@
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid #8e8d89;
   padding: 5px 10px 5px 10px;
-  border-radius: 15px;
+  border-radius: 5px;
+}
+
+#profile-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+}
+
+#profile-form-aboutme{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.border-title{
+    border-bottom: #8e8d89 1px solid;
+    margin-bottom: 30px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 30px;
+}
+
+#profile-form-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+form textarea, input{
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    background-color: #f3efef;
+}
+
+form textarea{
+    height: 100px;
 }

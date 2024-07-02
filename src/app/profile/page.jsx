@@ -16,10 +16,10 @@ function page() {
   return (
     <div id="profile-page">
       <div id="profile-container" className="profileContainer">
-        <ProfileHeader/>
+        <ProfileHeader  user={user}/>
         <div id="profile-content">
           <ProfileAbout  user={user}/>
-          <ProfileForm />
+          <ProfileForm user={user}/>
         </div>
       </div>
     </div>

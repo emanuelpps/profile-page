@@ -10,7 +10,20 @@
   cursor: pointer;
 }
 
-.buttonStyle:hover {
-  background-color: #cad7fe;
+.buttonStyleSecondary {
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #8e8d89;
+  padding: 15px 50px 15px 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: black;
+}
+
+.buttonStyle:hover, .buttonStyleSecondary:hover {
+  background-color: #8f9fcc;
   color: black;
 }

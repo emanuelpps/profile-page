@@ -30,7 +30,20 @@ span {
   font-size: 1rem;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.weight-titles-700 {
+  font-weight: 700;
+}
+
+.weight-titles-200 {
+  font-weight: 200;
+}
+
+.text-separate {
+  letter-spacing: 1.5px;
+  line-height: 18px;
 }
