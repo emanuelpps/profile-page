@@ -1,15 +1,14 @@
 :root {
-  background: rgb(204, 215, 252);
+  background: rgb(204, 216, 253);
   background: linear-gradient(
     90deg,
-    rgba(204, 215, 252, 1) 0%,
-    rgba(214, 220, 240, 1) 35%,
-    rgba(226, 226, 226, 1) 100%
+    rgba(204, 216, 253, 1) 0%,
+    rgba(213, 220, 242, 1) 35%,
+    rgba(225, 226, 226, 1) 100%
   );
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: "lato", sans-serif;
+  color: black;
 }
-
-
 
 main {
   display: flex;
@@ -23,4 +22,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+span {
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
 }
