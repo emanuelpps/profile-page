@@ -1,0 +1,7 @@
+{
+  "profile_image": "/assets/images/profile-picture.jpeg",
+  "first_name": "John",
+  "last_name": "Doe",
+  "age": 30,
+  "interests": ["reading", "traveling", "coding", "music", "sports"]
+}

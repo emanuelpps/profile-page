@@ -1,0 +1,34 @@
+.headerNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e2e2e2;
+  height: 70px;
+  padding: 20px;
+}
+
+.logoImage {
+  width: 25px;
+  height: 25px;
+}
+
+.navbarMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-color: black;
+  border: solid;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.navbarMenu:hover {
+  background-color: blanchedalmond;
+}
+
+.avatarImage {
+  border-radius: 10px;
+}
