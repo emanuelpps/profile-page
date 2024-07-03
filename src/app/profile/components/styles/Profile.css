@@ -161,3 +161,43 @@ form textarea, input{
 form textarea{
     height: 100px;
 }
+
+
+@media screen and (max-width: 780px) {
+    #profile-about {
+        display: flex;
+        flex-direction: column;
+        max-width: 780px;
+        width: 100%;
+    }
+    #profile-about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .aboutText {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #about-me{
+        width: 80%;
+        
+    }
+    #about-me p{
+        text-align: start;
+        width: 100%;
+
+    }
+
+    #profile-form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 50px;
+    }
+}
