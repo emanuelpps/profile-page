@@ -12,23 +12,6 @@ Este repositorio contiene una página de perfil construida utilizando Next.js, R
       - **NavBar/**: Contiene el componente de la barra de navegación.
     - **api/**: Contiene archivo JSON con datos de usuario.
 
-## Descripción de Archivos y Componentes
-
-### `public/`
-
-- **assets/images/profile-picture.jpeg**: Imagen de perfil usada en la aplicación.
-
-### `src/app/components/Buttons/Buttons.js`
-
-Contiene el componente de botónes que se reutilizan para enviar el formulario y otras acciones interactivas.
-
-### `src/app/components/NavBar/NavBar.js`
-
-Contiene el componente de la barra de navegación que se muestra en la parte superior de la página.
-
-### `src/app/api/user/userData.json`
-
-Contiene datos ficticios del usuario para mostrar en la página de perfil.
 
 ## Despliegue
 
