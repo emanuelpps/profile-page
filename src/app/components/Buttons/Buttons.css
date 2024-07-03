@@ -13,10 +13,10 @@
 .buttonStyleSecondary {
   background: transparent;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #8e8d89;
+  border: 2px solid #8e8d89;
   padding: 15px 50px 15px 50px;
   border-radius: 15px;
   cursor: pointer;

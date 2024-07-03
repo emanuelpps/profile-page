@@ -10,7 +10,6 @@
   gap: 50px;
 }
 
-
 #profile-header {
   display: flex;
   flex-direction: column;
@@ -32,19 +31,19 @@
   align-items: center;
 }
 
-#profile-about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    gap: 50px;
+#profile-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 50px;
 }
 
-#profile-about-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#profile-about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #profile-content {
@@ -67,11 +66,11 @@
   width: fit-content;
 }
 
-#about-me{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
 }
 
 .aboutText {
@@ -115,89 +114,122 @@
   border-radius: 5px;
 }
 
-#profile-form{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    gap: 50px;
+#profile-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 50px;
 }
 
-#profile-form-aboutme{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+#profile-form-aboutme {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-
-.border-title{
-    border-bottom: #8e8d89 1px solid;
-    margin-bottom: 30px;
+.border-title {
+  border-bottom: #8e8d89 1px solid;
+  margin-bottom: 30px;
 }
 
-.form-field{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin-top: 30px;
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 30px;
 }
 
-#profile-form-buttons{
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    margin-top: 30px;
-    padding-right: 20px;
+#profile-form-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-top: 30px;
+  padding-right: 20px;
 }
 
-form textarea, input{
-    border-radius: 15px;
-    border: none;
-    padding: 5px;
-    height: 30px;
-    width: 100%;
-    background-color: #f3efef;
+form textarea,
+input {
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  height: 30px;
+  width: 100%;
+  background-color: #f3efef;
 }
 
-form textarea{
-    height: 100px;
+form textarea {
+  height: 100px;
 }
 
+/*responsive*/
 
 @media screen and (max-width: 780px) {
-    #profile-about {
-        display: flex;
-        flex-direction: column;
-        max-width: 780px;
-        width: 100%;
-    }
-    #profile-about-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .aboutText {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
+  #profile-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 780px;
+    width: 100%;
+  }
+  #profile-about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .aboutText {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 
-    #about-me{
-        width: 80%;
-        
-    }
-    #about-me p{
-        text-align: start;
-        width: 100%;
+  #about-me {
+    width: 80%;
+  }
+  #about-me p {
+    text-align: start;
+    width: 100%;
+  }
 
-    }
+  #profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 50px;
+  }
+  #profile-header-buttons {
+    display: none;
+  }
+}
 
-    #profile-form{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        gap: 50px;
-    }
+/*animaciones*/
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }

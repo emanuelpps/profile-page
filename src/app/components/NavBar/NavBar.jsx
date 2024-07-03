@@ -12,7 +12,7 @@ function NavBar() {
     setUser(data);
   }, []);
   return (
-    <div id="NavBar" className="headerNavBar">
+    <div id="NavBar" className="headerNavBar slideInDown">
       <NavBarLogo />
       <NavBarMenu user={user} />
     </div>

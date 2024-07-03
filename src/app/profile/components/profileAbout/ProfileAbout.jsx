@@ -3,16 +3,21 @@ import Image from "next/image";
 
 function ProfileAbout({ user }) {
   return (
-    <div id="profile-about">
+    <div id="profile-about" className="slideInUp">
       <div id="profile-about-container">
-        <div id="profile-about-image">
+        {user?.profile_image === undefined ? (
+          <span className="loader"></span>
+        ) : (
           <Image
             src={user?.profile_image}
             width={300}
             height={300}
             className="profileImage"
+            alt="profile image"
+            placeholder="blur"
+            blurDataURL={user?.profile_image}
           />
-        </div>
+        )}
         <div id="profile-about-content">
           <div id="profile-about-content-text">
             <div className="aboutText">

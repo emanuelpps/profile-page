@@ -10,6 +10,7 @@ function ProfileForm({ user }) {
     message: "",
   });
 
+/*funcion para resetear el formulario */
   const resetFormValues = () => {
     setFormValues({
       name: "",
@@ -19,6 +20,7 @@ function ProfileForm({ user }) {
     setIsSubmitted(false);
   };
 
+  /*manejo para simular envio de formulario */
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsSubmitting(true);
@@ -36,7 +38,7 @@ function ProfileForm({ user }) {
     : "Enviar";
 
   return (
-    <div id="profile-form">
+    <div id="profile-form" className="slideInUp">
       <form onSubmit={handleSubmit}>
         <div id="contact-form">
           <h2 className="border-title weight-titles-200">Contactar</h2>
