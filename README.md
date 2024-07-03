@@ -20,7 +20,7 @@ Este repositorio contiene una página de perfil construida utilizando Next.js, R
 
 ### `src/app/components/Buttons/Buttons.js`
 
-Contiene el componente de botónes que se reutilizan para enviar formularios y otras acciones interactivas.
+Contiene el componente de botónes que se reutilizan para enviar el formulario y otras acciones interactivas.
 
 ### `src/app/components/NavBar/NavBar.js`
 
@@ -68,7 +68,7 @@ Al iniciar en la página, aparece una pantalla principal con:
 ### Perfil de Usuario
 
 Al hacer clic en el botón de perfil, se ingresa a la sección de perfil donde se puede visualizar:
-- **Información del Usuario**: Muestra el nombre, la ocupación, la ciudad, y otros detalles.
+- **Información del Usuario**: Muestra el nombre, edad, ubicacion, email, intereses y un resumen general del usuario.
 - **Imagen de Perfil**: Muestra la imagen de perfil del usuario.
 - **Formulario de Contacto**: Permite enviar un mensaje al usuario.
 
