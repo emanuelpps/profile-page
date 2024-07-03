@@ -56,7 +56,7 @@ Al iniciar en la página, aparece una pantalla principal con:
 Al hacer clic en el botón de perfil, se ingresa a la sección de perfil donde se puede visualizar:
 - **Información del Usuario**: Muestra el nombre, edad, ubicacion, email, intereses y un resumen general del usuario.
 - **Imagen de Perfil**: Muestra la imagen de perfil del usuario.
-- **Formulario de Contacto**: Permite enviar un mensaje al usuario.
+- **Formulario de Contacto**: Simula el envio de mensaje al usuario.
 
 ### Componentes de la Página de Perfil
 
