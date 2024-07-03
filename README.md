@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Profile Page
 
-## Getting Started
+Este repositorio contiene una página de perfil construida utilizando Next.js, React y CSS. El proyecto demuestra una implementación simple de un formulario de perfil de usuario con interactividad básica.
 
-First, run the development server:
+## Estructura del Directorio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **public/**: Contiene activos estáticos como imágenes.
+- **src/**: Contiene el código principal de la aplicación.
+  - **app/**: Contiene los componentes principales de la aplicación.
+    - **components/**: Contiene componentes reutilizables de React.
+      - **Buttons/**: Contiene el componente de botón.
+      - **NavBar/**: Contiene el componente de la barra de navegación.
+    - **api/**: Contiene archivo JSON con datos de usuario.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Descripción de Archivos y Componentes
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### `public/`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **assets/images/profile-picture.jpeg**: Imagen de perfil usada en la aplicación.
 
-## Learn More
+### `src/app/components/Buttons/Buttons.js`
 
-To learn more about Next.js, take a look at the following resources:
+Contiene el componente de botónes que se reutilizan para enviar formularios y otras acciones interactivas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `src/app/components/NavBar/NavBar.js`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contiene el componente de la barra de navegación que se muestra en la parte superior de la página.
 
-## Deploy on Vercel
+### `src/app/api/user/userData.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contiene datos ficticios del usuario para mostrar en la página de perfil.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Instalación y Uso
+
+1. Clonar el repositorio:
+    ```sh
+    git clone https://github.com/emanuelpps/profile-page.git
+    ```
+
+2. Navegar al directorio del proyecto:
+    ```sh
+    cd profile-page
+    ```
+
+3. Instalar las dependencias:
+    ```sh
+    npm install
+    ```
+
+4. Iniciar el servidor de desarrollo:
+    ```sh
+    npm run dev
+    ```
+
+5. Abrir el navegador en [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento.
+
+## Funcionalidades
+
+### Pantalla Principal
+
+Al iniciar en la página, aparece una pantalla principal con:
+- **NavBar**: Contiene un logo genérico y un botón para ingresar al perfil.
+- **Main**: Contiene el logo genérico.
+- **Footer**: Pie de página con información basica.
+
+### Perfil de Usuario
+
+Al hacer clic en el botón de perfil, se ingresa a la sección de perfil donde se puede visualizar:
+- **Información del Usuario**: Muestra el nombre, la ocupación, la ciudad, y otros detalles.
+- **Imagen de Perfil**: Muestra la imagen de perfil del usuario.
+- **Formulario de Contacto**: Permite enviar un mensaje al usuario.
+
+### Componentes de la Página de Perfil
+
+Dentro de la carpeta `profile` se encuentran las subcarpetas con los respectivos componentes utilizados en esa página, organizados para mantener el código modular y fácil de mantener.
