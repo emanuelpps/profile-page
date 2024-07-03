@@ -1,6 +1,6 @@
 # Profile Page
 
-Este repositorio contiene una página de perfil desarrollada utilizando Next.js, React y CSS. El proyecto demuestra una implementación simple de un formulario de perfil de usuario con interactividad básica.
+Este repositorio contiene una página de perfil desarrollada utilizando Next.js, React y CSS. El proyecto demuestra una implementación simple de un formulario de perfil de usuario.
 
 ## Estructura del Directorio
 
