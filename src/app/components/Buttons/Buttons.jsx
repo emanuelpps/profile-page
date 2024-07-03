@@ -1,4 +1,4 @@
-import "./Buttons.css"
+import "./styles/Buttons.css";
 
 const ButtonVariants = {
   primary: "buttonStyle",
