@@ -5,7 +5,7 @@ const ButtonVariants = {
   secondary: "buttonStyleSecondary",
 };
 
-const Buttons = ({ variant = "primary", label, onClick, style }) => (
+const Buttons = ({ variant = "primary", label, onClick, style, className }) => (
   <button className={ButtonVariants[variant]} onClick={onClick} style={style}>
     {label}
   </button>

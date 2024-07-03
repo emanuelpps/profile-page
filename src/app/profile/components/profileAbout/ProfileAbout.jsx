@@ -5,11 +5,13 @@ function ProfileAbout({ user }) {
   return (
     <div id="profile-about">
       <div id="profile-about-container">
-        <div id="details-title" className="detailsTitle">
-          <h2 className="weight-titles-200">Detalles</h2>
-        </div>
-        <div id="profile-about-image" >
-          <Image src={user?.profile_image} width={300} height={300}  className="profileImage"/>
+        <div id="profile-about-image">
+          <Image
+            src={user?.profile_image}
+            width={300}
+            height={300}
+            className="profileImage"
+          />
         </div>
         <div id="profile-about-content">
           <div id="profile-about-content-text">
@@ -21,7 +23,7 @@ function ProfileAbout({ user }) {
             </div>
             <div className="aboutText">
               <span>Edad</span>
-              <span>{user?.age}</span>
+              <span>{user?.age} años</span>
             </div>
             <div className="aboutText">
               <span>Ubicacion</span>
@@ -32,14 +34,20 @@ function ProfileAbout({ user }) {
               <span>{user?.email}</span>
             </div>
           </div>
-          <div id="profile-about-interests-tags" className="flex-row">
-            <div id="interests-title"><h4>Intereses</h4></div>
-            {user?.interests?.map((tag) => (
-              <span key={tag} className="tag">
-                {tag}
-              </span>
-            ))}
+        </div>
+      </div>
+      <div id="about-me">
+        <h2 className="border-title weight-titles-200">Sobre Mi</h2>
+        <p className="text-separate">{user?.bio}</p>
+        <div id="profile-about-interests-tags" className="flex-row">
+          <div id="interests-title">
+            <h4>Intereses</h4>
           </div>
+          {user?.interests?.map((tag) => (
+            <span key={tag} className="tag">
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
     </div>

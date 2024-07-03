@@ -17,10 +17,8 @@ function page() {
     <div id="profile-page">
       <div id="profile-container" className="profileContainer">
         <ProfileHeader  user={user}/>
-        <div id="profile-content">
           <ProfileAbout  user={user}/>
           <ProfileForm user={user}/>
-        </div>
       </div>
     </div>
   );

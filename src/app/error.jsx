@@ -1,10 +1,15 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 function error() {
   return (
-    <div>error</div>
-  )
+    <div className="loaderContainer">
+      <div className="centerContent">
+        <h1>Error</h1>
+        <span>UPS! Hemos encontrado un error</span>
+      </div>
+    </div>
+  );
 }
 
-export default error
+export default error;

@@ -7,6 +7,7 @@
   overflow-y: hidden;
   height: auto;
   margin-bottom: 100px;
+  gap: 50px;
 }
 
 
@@ -31,13 +32,25 @@
   align-items: center;
 }
 
+#profile-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 50px;
+}
+
+#profile-about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #profile-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
-  width: 100%;
 }
 
 #profile-about-image {
@@ -54,12 +67,21 @@
   width: fit-content;
 }
 
+#about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
 .aboutText {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 15px 0 15px;
-  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  gap: 80px;
 }
 
 .aboutText span:first-child {
@@ -73,12 +95,10 @@
 }
 
 #profile-about-interests-tags {
-  margin-top: 30px;
-  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
 }
 
 .tag {
@@ -98,7 +118,7 @@
 #profile-form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     gap: 50px;
 }
 
