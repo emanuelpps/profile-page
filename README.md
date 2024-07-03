@@ -30,9 +30,12 @@ Contiene el componente de la barra de navegación que se muestra en la parte sup
 
 Contiene datos ficticios del usuario para mostrar en la página de perfil.
 
+## Despliegue
+
+La aplicación está desplegada en Vercel y se puede acceder a través del siguiente enlace: [Profile Page](https://profile-page-teal.vercel.app/)
 
 
-## Instalación y Uso
+## En caso de Instalación y Uso local
 
 1. Clonar el repositorio:
     ```sh
